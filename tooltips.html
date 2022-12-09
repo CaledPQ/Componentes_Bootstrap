@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Tooltips</title>
+</head>
+
+<body>
+    <section class="container p-3 bg-dark text-white">
+        <section class="child border border-dark p-3">
+            <header class="title text-center">
+                <h1 class="tittle">Tooltips</h1>
+                <p class="example">Example about Tooltips.</p>
+            </header>
+
+            <section class="example">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Tooltip on top">
+                    Tooltip on top
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Tooltip on right">
+                    Tooltip on right
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Tooltip on bottom">
+                    Tooltip on bottom
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+                    title="Tooltip on left">
+                    Tooltip on left
+                </button>
+            </section>
+        </section>
+    </section>
+
+
+
+    <section class="container p-3 bg-dark text-white">
+        <section class="child border border-dark p-3">
+            <header class="title text-center">
+                <h1 class="tittle">With an SVG</h1>
+                <p class="example"></p>
+            </header>
+
+            <section class="example">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                    Tooltip with HTML
+                  </button>
+            </section>
+        </section>
+    </section>
+
+
+
+    <section class="back d-flex justify-content-center">
+        <a href="./index.html" class="card-link">Back to the principal pag</a>
+    </section>
+    
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

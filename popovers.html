@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Popovers</title>
+</head>
+
+<body>
+    <section class="container p-3 bg-dark text-white">
+        <section class="child border border-dark p-3">
+            <header class="title text-center">
+                <h1 class="tittle">Popovers</h1>
+                <p class="example">Example about Popovers.</p>
+            </header>
+
+            <section class="example">
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
+                    data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                    popover</button>
+            </section>
+        </section>
+    </section>
+
+
+
+    <section class="container p-3 bg-dark text-white">
+        <section class="child border border-dark p-3">
+            <header class="title text-center">
+                <h1 class="tittle">Four directions</h1>
+                <p class="example">Example about Four directions.</p>
+            </header>
+
+            <section class="example">
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="top" data-bs-content="Top popover">
+                    Popover on top
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="right" data-bs-content="Right popover">
+                    Popover on right
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="bottom" data-bs-content="Bottom popover">
+                    Popover on bottom
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="left" data-bs-content="Left popover">
+                    Popover on left
+                </button>
+            </section>
+        </section>
+    </section>
+
+
+
+
+    <section class="container p-3 bg-dark text-white">
+        <section class="child border border-dark p-3">
+            <header class="title text-center">
+                <h1 class="tittle">Disabled elements</h1>
+                <p class="example">Example about Disabled elements.</p>
+            </header>
+
+            <section class="example">
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="Disabled popover">
+                    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+                </span>
+            </section>
+        </section>
+    </section>
+
+    <section class="back d-flex justify-content-center">
+        <a href="./index.html" class="card-link">Back to the principal pag</a>
+    </section>
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

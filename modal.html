@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Modal</title>
+</head>
+
+<body>
+
+    <section class="container p-3 bg-dark text-white">
+        <section class="child border border-dark p-3">
+            <header class="title text-center">
+                <h1 class="tittle">Modal</h1>
+                <p class="example">Example about Modal.</p>
+            </header>
+
+            <section class="example">
+                <section class="example">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Launch static backdrop modal
+                    </button>
+
+                    <!-- Modal -->
+                    <section class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <section class="modal-dialog">
+                            <section class="modal-content">
+                                <ssec class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Hello!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </ssec>
+                                <section class="modal-body">
+                                    Thanks!
+                                </section class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+
+
+    <section class="container p-3 bg-dark text-white">
+        <section class="child border border-dark p-3">
+            <header class="title text-center">
+                <h1 class="tittle">Varying modal content</h1>
+                <p class="example">Example about Varying modal content.</p>
+            </header>
+
+            <section class="example">
+                <section class="example">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo">Open modal for @mdo</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@fat">Open modal for @fat</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+                    <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <section class="modal-dialog">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </section>
+                                <section class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    </section>
+
+
+
+    <section class="container p-3 bg-dark text-white">
+        <section class="child border border-dark p-3">
+            <header class="title text-center">
+                <h1 class="tittle">Toggle between modals</h1>
+                <p class="example">Example about Toggle between modals.</p>
+            </header>
+
+            <section class="example">
+                <section class="example">
+                    <section class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <section class="modal-dialog modal-dialog-centered">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    Show a second modal and hide this one with the button below.
+                                </section>
+                                <section class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                        data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <section class="modal-dialog modal-dialog-centered">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    Hide this modal and show the first with the button below.
+                                </section>
+                                <section class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                        data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open
+                        first
+                        modal</a>
+                </section>
+            </section>
+        </section>
+    </section>
+    </section>
+
+
+    <section class="back d-flex justify-content-center">
+        <a href="./index.html" class="card-link">Back to the principal pag</a>
+    </section>
+
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
